@@ -41,3 +41,24 @@ main{
 	width: 269px;
 	height: 471px;
 }
+
+#redes-sociais{
+	text-align: right;
+}
+
+#redes-sociais img{
+	width: 50px;
+	margin: 10px;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+	box-sizing: border-box; /*este recurso faz com que a imagem dos links das redes sociais não empurrem as outras, ao passar o mouse por cima delas(efeito hover)*/
+}
+
+#redes-sociais img:hover{
+	border: 2px solid rgba(255, 255, 255, 0.596);
+	transform: translate(-3px, -3px); /*este recurso faz os botões das redes sociais saltarem ao passar o mouse por cima delas*/
+	
+	transition: transform 0.3s, border 1s; /*Estas duas configura~ções fazem com que o efeito hover seja mais fluido. A primeira na elevação do botão e a segunda no surgimento da borda.*/
+
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.418); /*este recurso faz com que a sobra aumente de tamanho, quando o efeito hover é ativado nos botões*/
+}
